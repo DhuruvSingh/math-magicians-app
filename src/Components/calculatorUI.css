@@ -1,0 +1,45 @@
+.mainCalc {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.outputBox {
+  height: 100px;
+  width: 44%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 40px;
+}
+
+.calcNumBtn {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.calcFunctionBtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.calcNumBtn >.numBtn {
+  height: 60px;
+  width: 90px;
+  margin: 1px;
+  background-color: gainsboro;
+}
+
+.calcFunctionBtn > .numBtn {
+  height: 60px;
+  width: 90px;
+  margin: 1px;
+  background-color: aqua;
+}
