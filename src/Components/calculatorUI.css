@@ -1,9 +1,15 @@
+#root {
+  display: flex;
+  justify-content: center;
+}
+
 .mainCalc {
   display: flex;
   flex-direction: column;
   text-align: end;
   align-items: center;
   margin-top: 20px;
+  width: 365px;
 }
 
 .buttons {
@@ -12,7 +18,7 @@
 
 .outputBox {
   height: 100px;
-  width: 44%;
+  width: 100%;
   background-color: cornflowerblue;
   display: flex;
   justify-content: right;
@@ -30,7 +36,7 @@
   flex-direction: column;
 }
 
-.calcNumBtn >.numBtn {
+.calcNumBtn > .numBtn {
   height: 60px;
   width: 90px;
   margin: 1px;
@@ -42,4 +48,9 @@
   width: 90px;
   margin: 1px;
   background-color: aqua;
+}
+
+.numBtn0 {
+  grid-row: 5;
+  grid-column: 1/3;
 }
