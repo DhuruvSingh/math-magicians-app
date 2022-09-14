@@ -1,13 +1,7 @@
 import './calculatorUI.css';
 import React from 'react';
 
-// eslint-disable-next-line react/prefer-stateless-function
-class CalculatorUI extends React.Component {
-// eslint-disable-next-line no-useless-constructor
-  constructor(props) {
-    super(props);
-  }
-
+class CalculatorUI extends React.PureComponent {
   render() {
     return (
       <div className="mainCalc">

@@ -1,10 +1,12 @@
-import './App.css';
+import React from 'react';
 import CalculatorUI from './Components/calculatorUI';
 
-function App() {
-  return (
-    <CalculatorUI />
-  );
+class App extends React.PureComponent {
+  render() {
+    return (
+      <CalculatorUI />
+    );
+  }
 }
 
 export default App;
