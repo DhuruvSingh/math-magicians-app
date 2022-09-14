@@ -2,7 +2,7 @@
 
 # Math Magician App 
 
-> Book library with vanilla javascript.
+> Math Magicians App with React.
 
 ![screenshot1](./)
 ![screenshot2](./)
@@ -27,6 +27,12 @@ In this project, you will restructure your Math Magicians app code. The goal is 
 **This is an example of how you may give instructions on setting up your project locally.**
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
+- You need to have Node, npm & git installed.
+- Clone the repository using this command `git clone https://github.com/DhuruvSingh/math-magicians-app.git`.
+- You can open the "math-magicians" folder using VSCode or any other editor.
+- Use `npm i` to install all required node modeules.
+- Use `npm start` command to open a live server.
+
 
 To get a local copy up and running follow these simple example steps.
 
@@ -39,7 +45,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone 
+   git clone https://github.com/DhuruvSingh/math-magicians-app.git
    ```
 2. Install NPM packages
    ```sh
