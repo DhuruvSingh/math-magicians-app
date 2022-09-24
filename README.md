@@ -4,8 +4,6 @@
 
 > Math Magicians App with React.
 
-
-
 In this project, you will restructure your Math Magicians app code. The goal is to make it React App by using React Tools. You will also practice the React  syntax that you have learned.
 
 ## Built With
@@ -17,8 +15,7 @@ In this project, you will restructure your Math Magicians app code. The goal is 
 
 ## Live Demo
 
-
-
+[Netlify Link](https://bright-babka-34d30b.netlify.app)
 
 ## Getting Started
 
