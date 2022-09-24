@@ -1,6 +1,7 @@
-import './calculatorUI.css';
+import './CalculatorUI.css';
 import { useState } from 'react';
 import calculate from '../logic/calculate';
+import Header from './Header';
 
 const CalculatorUI = () => {
   const [state, setState] = useState({ total: '', next: '', operation: '' });
@@ -30,6 +31,7 @@ const KeyBoard = (props) => {
   const { handler } = props;
   return (
     <div className="mainCalc">
+      <Header />
       <div className="buttons">
         <div className="calcNumBtn">
           <button type="button" onClick={handler} className=" numBtn numBtnAC">AC</button>
