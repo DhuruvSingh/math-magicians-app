@@ -5,6 +5,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
+// eslint-disable-next-line import/extensions
 import Calculatorui from './Components/Calculatorui.js';
 import Quotes from './Components/Quotes';
 import Home from './Components/Home';
