@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-  <header style={{ display: 'flex' }}>
+  <header className="navbar">
     <h1>Dhuruv Math Magic</h1>
     <ul style={{ display: 'flex' }}>
       <li><Link to="/" className="link">Home</Link></li>

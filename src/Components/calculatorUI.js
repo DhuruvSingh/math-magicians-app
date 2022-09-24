@@ -14,14 +14,17 @@ const CalculatorUI = () => {
 
   const { total, next, operation } = state;
   return (
-    <div className="calculatorMain">
-      <div className="outputBox">
-        { total }
-        { operation }
-        { next }
+    <>
+      <div className="calculatorMain">
+        <Header />
+        <div className="outputBox">
+          {total}
+          {operation}
+          {next}
+        </div>
+        <KeyBoard handler={handleClick} />
       </div>
-      <KeyBoard handler={handleClick} />
-    </div>
+    </>
 
   );
 };
@@ -31,7 +34,6 @@ const KeyBoard = (props) => {
   const { handler } = props;
   return (
     <div className="mainCalc">
-      <Header />
       <div className="buttons">
         <div className="calcNumBtn">
           <button type="button" onClick={handler} className=" numBtn numBtnAC">AC</button>

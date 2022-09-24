@@ -2,9 +2,8 @@ import React from 'react';
 import Header from './Header';
 
 const Quotes = () => (
-  <div>
+  <div className="quoteContainer">
     <Header />
-
     <h4>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim,
       dolor id sagittis tincidunt, mauris mauris consequat leo, et commodo purus

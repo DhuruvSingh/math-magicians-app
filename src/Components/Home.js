@@ -2,9 +2,9 @@ import React from 'react';
 import Header from './Header';
 
 const Home = () => (
-  <div>
+  <div className="homeContainer">
     <Header />
-    <h1>Magic...... Lets go</h1>
+    <h1>Welcome to our page</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim,
       dolor id sagittis tincidunt, mauris mauris consequat leo, et commodo purus
