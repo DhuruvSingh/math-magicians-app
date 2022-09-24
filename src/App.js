@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Calculatorui from './Components/Calculatorui';
+import Calculatorui from './Components/Calculatorui.js';
 import Quotes from './Components/Quotes';
 import Home from './Components/Home';
 
