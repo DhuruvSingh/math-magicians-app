@@ -17,7 +17,6 @@ In this project, you will restructure your Math Magicians app code. The goal is 
 
 [Netlify Link](https://bright-babka-34d30b.netlify.app)
 
-
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**

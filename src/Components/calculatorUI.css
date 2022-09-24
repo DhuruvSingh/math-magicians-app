@@ -1,10 +1,29 @@
 #root {
   display: flex;
-  justify-content: center;
 }
 
 .calculatorMain {
-  margin-top: 20px;
+  background-image: url(../CalculatorBg.jpg);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  background-color: khaki;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.calculatorMain h3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #0000007d;
+  border: solid #ffffff38;
+  border-radius: 6px;
+  padding: 8px;
+  color: wheat;
+  position: absolute;
+  left: 5px;
+  top: 85px;
 }
 
 .mainCalc {
@@ -13,6 +32,7 @@
   text-align: end;
   align-items: center;
   width: 365px;
+  margin-right: 20%;
 }
 
 .buttons {
@@ -21,12 +41,14 @@
 
 .outputBox {
   height: 100px;
-  width: 100%;
+  width: 365px;
   background-color: cornflowerblue;
   display: flex;
   justify-content: right;
   align-items: center;
   font-size: 40px;
+  margin-top: 15px;
+  margin-right: 20%;
 }
 
 .calcNumBtn {
@@ -57,4 +79,79 @@
   grid-row: 5;
   grid-column: 1/3;
   width: 99% !important;
+}
+
+.navbar {
+  display: flex;
+  background: hsl(0deg 0% 0% / 49%);
+  justify-content: space-between;
+  width: inherit;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  margin-right: 20px;
+  height: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.homeContainer {
+  background-image: url(../CalculatorBg.jpg);
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.homeContainer p {
+  background: #0000007d;
+  margin: 25px;
+  border: solid #ffffff38;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: large;
+  font-weight: 500;
+  color: wheat;
+  text-align: center;
+}
+
+.homeContainer h1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #0000007d;
+  border: solid #ffffff38;
+  border-radius: 6px;
+  padding: 8px;
+  color: wheat;
+}
+
+.quoteContainer {
+  background-image: url(../CalculatorBg.jpg);
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.quoteContainer h4 {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #0000007d;
+  border: solid #ffffff38;
+  border-radius: 6px;
+  padding: 8px;
+  color: wheat;
+  font-size: large;
+}
+
+.navbar h1 {
+  color: wheat;
+  margin-left: 10px;
 }
