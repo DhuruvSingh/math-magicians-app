@@ -6,7 +6,8 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import CalculatorUI from './Components/CalculatorUI';
+// eslint-disable-next-line import/extensions
+import CalculatorUI from './Components/CalculatorUI.js';
 import Quotes from './Components/Quotes';
 import Home from './Components/Home';
 
