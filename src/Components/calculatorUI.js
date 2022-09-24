@@ -1,38 +1,33 @@
-import './calculatorUI.css';
-import React from 'react';
+import './CalculatorUI.css';
+import { useState } from 'react';
 import calculate from '../logic/calculate';
+import Header from './Header';
 
-class CalculatorUI extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: '',
-      next: '',
-      operation: '',
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+const CalculatorUI = () => {
+  const [state, setState] = useState({ total: '', next: '', operation: '' });
 
-  handleClick(event) {
+  const handleClick = (event) => {
     const value = event.target.textContent;
-    const solution = calculate(this.state, value);
-    this.setState(solution);
-  }
+    const solution = calculate(state, value);
+    setState(solution);
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
-    return (
+  const { total, next, operation } = state;
+  return (
+    <>
       <div className="calculatorMain">
+        <Header />
         <div className="outputBox">
-          { total }
-          { operation }
-          { next }
+          {total}
+          {operation}
+          {next}
         </div>
-        <KeyBoard handler={this.handleClick} />
+        <KeyBoard handler={handleClick} />
       </div>
-    );
-  }
-}
+    </>
+
+  );
+};
 
 const KeyBoard = (props) => {
   // eslint-disable-next-line react/prop-types

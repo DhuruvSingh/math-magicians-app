@@ -1,10 +1,25 @@
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import CalculatorUI from './Components/calculatorUI';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import CalculatorUI from './Components/CalculatorUI';
+import Quotes from './Components/Quotes';
+import Home from './Components/Home';
 
-class App extends React.PureComponent {
+class App extends React.Component {
   render() {
     return (
-      <CalculatorUI />
+      <Router>
+        <Routes>
+          <Route path="/Quotes" element={<Quotes />} />
+          <Route path="/CalculatorUI" element={<CalculatorUI />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     );
   }
 }
